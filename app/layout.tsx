@@ -20,24 +20,24 @@ export default function RootLayout({
           <nav className="bg-white/90 backdrop-blur-xl shadow-2xl border-b border-gray-200/30 sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center h-20">
-                <div className="flex items-center space-x-4 space-x-reverse">
+                <div className="flex items-center space-x-4 ">
                  
                   <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-blue-600">
                     React Hooks Tutorial
                   </h1>
                 </div>
-                <div className="hidden md:flex items-center space-x-2 space-x-reverse">
-                  <a href="/" className="group relative px-6 py-3 text-gray-700 hover:text-blue-600 rounded-2xl text-sm font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:shadow-lg hover:-translate-y-1">
-                    <span className="relative z-10">🏠 خانه</span>
-                  </a>
+                <div className="hidden md:flex items-center space-x-2 space-x">
                   <a href="/useRef" className="group relative px-6 py-3 text-gray-700 hover:text-blue-600 rounded-2xl text-sm font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:shadow-lg hover:-translate-y-1">
-                    <span className="relative z-10">🎯 useRef</span>
+                    <span className="relative z-10"> useRef</span>
                   </a>
                   <a href="/useCallback" className="group relative px-6 py-3 text-gray-700 hover:text-green-600 rounded-2xl text-sm font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:shadow-lg hover:-translate-y-1">
-                    <span className="relative z-10">⚡ useCallback</span>
+                    <span className="relative z-10"> useCallback</span>
                   </a>
                   <a href="/useMemo" className="group relative px-6 py-3 text-gray-700 hover:text-purple-600 rounded-2xl text-sm font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-indigo-50 hover:shadow-lg hover:-translate-y-1">
-                    <span className="relative z-10">🧠 useMemo</span>
+                    <span className="relative z-10"> useMemo</span>
+                  </a>
+                  <a href="/" className="group relative px-6 py-3 text-gray-700 hover:text-blue-600 rounded-2xl text-sm font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:shadow-lg hover:-translate-y-1">
+                    <span className="relative z-10"> Home</span>
                   </a>
                 </div>
                 

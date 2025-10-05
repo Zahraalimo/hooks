@@ -90,9 +90,7 @@ export default function UseCallbackPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl shadow-2xl mb-8">
-            <span className="text-white text-3xl font-bold">⚡</span>
-          </div>
+          
           <h1 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-green-600 mb-6">
             useCallback
           </h1>
@@ -149,7 +147,7 @@ export default function UseCallbackPage() {
                   </div>
                   <span className="text-gray-400 text-xs font-mono">code</span>
                 </div>
-                <pre className="text-green-400 font-mono text-xs overflow-x-auto">
+                <pre className="text-green-400 font-mono text-xs overflow-x-auto text-left">
 {`// بدون useCallback - در هر render دوباره ایجاد می‌شود
 const handleClick = () => {
   setCount(prev => prev + 1)
@@ -202,7 +200,7 @@ const handleClick = useCallback(() => {
                   </div>
                   <span className="text-gray-400 text-xs font-mono">code</span>
                 </div>
-                <pre className="text-green-400 font-mono text-xs overflow-x-auto">
+                <pre className="text-green-400 font-mono text-xs overflow-x-auto text-left">
 {`const [count, setCount] = useState(0)
 
 // Function فقط زمانی دوباره ایجاد می‌شود که count تغییر کند
@@ -283,7 +281,7 @@ const handleClickWithDependency = useCallback(() => {
                 </div>
                 <span className="text-gray-400 text-sm font-mono">ParentComponent.js</span>
               </div>
-              <pre className="text-green-400 font-mono text-sm overflow-x-auto leading-relaxed">
+              <pre className="text-green-400 font-mono text-sm overflow-x-auto leading-relaxed text-left">
 {`// Child component با React.memo
 const ExpensiveChild = memo(({ onClick, data }) => {
   console.log('ExpensiveChild rendered!')

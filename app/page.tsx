@@ -28,21 +28,7 @@ export default function Home() {
            
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 sm:space-x-reverse">
-            <Link 
-              href="/useRef" 
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 hover:-translate-y-1"
-            >
-              <span className="relative z-10">🚀 شروع آموزش</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Link>
-            <Link 
-              href="#hooks" 
-              className="group px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 font-bold text-lg rounded-2xl border-2 border-gray-200 hover:border-blue-300 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1"
-            >
-              <span className="group-hover:text-blue-600 transition-colors duration-300">👀 مشاهده Hooks</span>
-            </Link>
-          </div>
+         
         </div>
       </div>
 
@@ -53,10 +39,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative p-8">
             <div className="text-center">
-              <div className="relative w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-blue-500/30 transition-all duration-300 group-hover:scale-110">
-                <span className="text-3xl">🎯</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+             
               <h3 className="text-3xl font-black text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">useRef</h3>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
                 برای دسترسی مستقیم به DOM elements و ذخیره مقادیر بدون re-render
@@ -91,10 +74,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative p-8">
             <div className="text-center">
-              <div className="relative w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-green-500/30 transition-all duration-300 group-hover:scale-110">
-                <span className="text-3xl">⚡</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+              
               <h3 className="text-3xl font-black text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300">useCallback</h3>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
                 برای بهینه‌سازی performance با memoization functions
@@ -129,10 +109,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-violet-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative p-8">
             <div className="text-center">
-              <div className="relative w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-purple-500/30 transition-all duration-300 group-hover:scale-110">
-                <span className="text-3xl">🧠</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+            
               <h3 className="text-3xl font-black text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300">useMemo</h3>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
                 برای بهینه‌سازی performance با memoization values
@@ -164,8 +141,31 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-    
-
+      <div className="mb-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">📊 مقایسه کامل</h2>
+          <p className="text-lg text-gray-600">مقایسه useMemo، useCallback، useRef و مفهوم Memorization</p>
+        </div>
+        
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+          <div className="text-center">
+            <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span className="text-white text-3xl font-bold">📊</span>
+            </div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">مقایسه React Hooks</h3>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
+              مقایسه کامل useMemo، useCallback، useRef و مفهوم Memorization با مثال‌های عملی و بهترین روش‌ها
+            </p>
+            <Link 
+              href="/comparison" 
+              className="group/btn relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-2xl shadow-lg hover:shadow-indigo-500/30 transform hover:scale-105 transition-all duration-300"
+            >
+              <span className="relative z-10">مشاهده مقایسه کامل</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-2xl opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+            </Link>
+          </div>
+        </div>
+      </div>
     
     </div>
   )
