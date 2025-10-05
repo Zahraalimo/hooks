@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Custom styles */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #ddd6fe 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+  to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.gradient-bg-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
